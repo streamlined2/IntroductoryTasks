@@ -6,6 +6,8 @@ public class Subject extends Entity {
 	private String title;
 	private int volume;
 	
+	public Subject() {}
+	
 	public Subject(String title, int volume) {
 		super();
 		this.title = title;

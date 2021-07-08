@@ -4,25 +4,26 @@ import java.io.Serializable;
 import java.util.Objects;
 import java.util.StringJoiner;
 
-public class Phone implements Serializable {
+public class SpecialityCode implements Serializable {
 	private String value;
-
-	public Phone(String value) {
-		this.value = value;
-	}
-
-	public String getValue() {
-		return value;
-	}
-
-	public void setValue(String value) {
+	
+	public SpecialityCode(String value) {
 		this.value = value;
 	}
 	
+	public String getValue() {
+		return value;
+	}
+	
+	public void setValue(String value) {
+		this.value = value;
+	}
+
 	@Override
 	public String toString() {
 		return new StringJoiner(",","[","]").
-				add(getValue()).
+				add(super.toString()).
+				add(value).
 				toString();
 	}
 	
@@ -33,10 +34,9 @@ public class Phone implements Serializable {
 	
 	@Override
 	public boolean equals(Object obj) {
-		if(obj instanceof Phone) {
-			return Objects.equals(value, ((Phone)obj).value);  
+		if(obj instanceof SpecialityCode) {
+			return Objects.equals(value, ((SpecialityCode)obj).value);  
 		}
 		return false;
 	}
-
 }

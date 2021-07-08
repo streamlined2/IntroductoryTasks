@@ -12,11 +12,16 @@ public class Group extends Entity {
 	private String name;
 	private Grade grade;
 	private Mentor curator;
+	private String specialityCode;
+	private Set<Course> courses = new HashSet<>();
 	
-	public Group(String name, Grade grade, Mentor curator) {
+	public Group() {}
+	
+	public Group(String name, Grade grade, Mentor curator, String specialityCode) {
 		this.name = name;
 		this.grade = grade;
 		this.curator = curator;
+		this.specialityCode = specialityCode;
 	}
 
 	public String getName() { return name;}
@@ -28,16 +33,32 @@ public class Group extends Entity {
 	public Mentor getCurator() {return curator;}
 	public void setCurator(Mentor curator) { this.curator = curator;}
 	
+	public String getSpecialityCode() {
+		return specialityCode;
+	}
+
+	public void setSpecialityCode(String specialityCode) {
+		this.specialityCode = specialityCode;
+	}
+
 	public void addStudent(Student student) {
-		if(students.size()==MAX_STUDENTS) throw new ConsistencyException(String.format("group should contain at most %d students",MAX_STUDENTS));
+		if(students.size()>=MAX_STUDENTS) throw new ConsistencyException(String.format("group should contain at most %d students",MAX_STUDENTS));
 		students.add(student);
 	}
 	
 	public void removeStudent(Student student) {
-		if(students.size()==MIN_STUDENTS) throw new ConsistencyException(String.format("group should contain at least %d students",MIN_STUDENTS));
+		if(students.size()<=MIN_STUDENTS) throw new ConsistencyException(String.format("group should contain at least %d students",MIN_STUDENTS));
 		students.remove(student);
 	}
 	
+	public void addCourse(Course course) {
+		courses.add(course);
+	}
+	
+	public void removeCourse(Course course) {
+		courses.remove(course);
+	}
+
 	@Override
 	public String toString() {
 		return new StringJoiner(",","[","]").

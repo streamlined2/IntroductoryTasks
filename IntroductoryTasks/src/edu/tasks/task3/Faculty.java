@@ -13,6 +13,8 @@ public class Faculty extends Entity {
 	private Set<Phone> phones = new HashSet<>();
 	private Email email;
 	
+	public Faculty() {}
+	
 	public Faculty(String name, Location location, Email email) {
 		this.name = name;
 		this.location = location;
@@ -30,7 +32,7 @@ public class Faculty extends Entity {
 	
 	public void addChair(Chair chair) { chairs.add(chair);}
 	public void removeChair(Chair chair) {
-		if(chairs.size()==MIN_CHAIRS) throw new ConsistencyException(String.format("faculty should contain at least %d chair",MIN_CHAIRS));
+		if(chairs.size()<=MIN_CHAIRS) throw new ConsistencyException(String.format("faculty should contain at least %d chair",MIN_CHAIRS));
 		chairs.remove(chair);
 	}
 	

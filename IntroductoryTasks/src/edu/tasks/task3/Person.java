@@ -10,6 +10,8 @@ public class Person extends Entity {
 	private String lastName;
 	private LocalDate birthDate;
 	private Country countryOfOrigin;
+	
+	public Person() {}
 
 	public Person(String passport, String firstName, String lastName, LocalDate birthDate, Country countryOfOrigin) {
 		this.passport = passport;

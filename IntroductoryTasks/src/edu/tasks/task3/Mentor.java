@@ -10,6 +10,8 @@ public class Mentor extends Person {
 	private int rate;
 	private Set<Subject> subjects = new HashSet<>();
 	
+	public Mentor() {}
+	
 	public Mentor(String passport, String firstName, String lastName, LocalDate birthDate, Country countryOfOrigin,
 			int experience, int rate) {
 		super(passport, firstName, lastName, birthDate, countryOfOrigin);

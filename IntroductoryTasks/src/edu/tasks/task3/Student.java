@@ -6,6 +6,8 @@ import java.util.StringJoiner;
 public class Student extends Person {	
 	private String cardId;
 	private Grade grade;
+	
+	public Student() {}
 
 	public Student(String cardId, Grade grade, String passport, String firstName, String lastName, LocalDate birthDate, Country countryOfOrigin) {
 		super(passport, firstName, lastName, birthDate, countryOfOrigin);

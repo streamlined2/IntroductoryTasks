@@ -13,6 +13,8 @@ public class University extends Entity {
 	private Set<Faculty> faculties = new HashSet<>();
 	private Set<Subject> subjects = new HashSet<>();
 	
+	public University() {}
+	
 	public University(String name, LocalDate founded, Location location) {
 		this.name = name;
 		this.founded = founded;
