@@ -9,7 +9,7 @@
 <i>University education domain model:</i> 
 <ol>
 <li>package <code>edu.tasks.task3</code></li> 
-<li>diagrams <code>class-diagram</code></li>
+<li>diagrams <code>class-diagram</code>,<code>use-case-diagram</code></li>
 </ol>
 <li><h2>Task 4</h2>
 <i>Compose SQL statements to solve given problems:</i> <code>statement_1.sql</code>, <code>statement_2.sql</code> in folder <code>src/task4</code></li>
