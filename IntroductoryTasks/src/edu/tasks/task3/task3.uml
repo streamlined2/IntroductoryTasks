@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_gClEoOF6EeuBYMJfL9ax2g" name="task3">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_gDwJUOF6EeuBYMJfL9ax2g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_KCNIQOF7EeuBYMJfL9ax2g" name="Mentor"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_yejJUOF9EeuBYMJfL9ax2g" name="Student"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_2ELzQOF9EeuBYMJfL9ax2g" name="Take a course"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-PvC8OF-EeuBYMJfL9ax2g" name="study course" memberEnd="_-PxfMOF-EeuBYMJfL9ax2g _-PyGQOF-EeuBYMJfL9ax2g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-PwREOF-EeuBYMJfL9ax2g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-Pw4IOF-EeuBYMJfL9ax2g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-PxfMOF-EeuBYMJfL9ax2g" name="student" type="_yejJUOF9EeuBYMJfL9ax2g" association="_-PvC8OF-EeuBYMJfL9ax2g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-PyGQOF-EeuBYMJfL9ax2g" name="take a course" type="_2ELzQOF9EeuBYMJfL9ax2g" association="_-PvC8OF-EeuBYMJfL9ax2g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_PI1HAOF_EeuBYMJfL9ax2g" name="Mentor group"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_kCQM8OF_EeuBYMJfL9ax2g" name="lecture course" memberEnd="_kCQ0AeF_EeuBYMJfL9ax2g _kCQ0AuF_EeuBYMJfL9ax2g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kCQM8eF_EeuBYMJfL9ax2g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kCQ0AOF_EeuBYMJfL9ax2g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_kCQ0AeF_EeuBYMJfL9ax2g" name="take a course" type="_2ELzQOF9EeuBYMJfL9ax2g" association="_kCQM8OF_EeuBYMJfL9ax2g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_kCQ0AuF_EeuBYMJfL9ax2g" name="mentor" type="_KCNIQOF7EeuBYMJfL9ax2g" association="_kCQM8OF_EeuBYMJfL9ax2g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_K0268OGAEeuBYMJfL9ax2g" name="monitor and resolve group problems" memberEnd="_K03iAuGAEeuBYMJfL9ax2g _K03iA-GAEeuBYMJfL9ax2g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K03iAOGAEeuBYMJfL9ax2g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K03iAeGAEeuBYMJfL9ax2g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_K03iAuGAEeuBYMJfL9ax2g" name="mentor group" type="_PI1HAOF_EeuBYMJfL9ax2g" association="_K0268OGAEeuBYMJfL9ax2g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_K03iA-GAEeuBYMJfL9ax2g" name="mentor" type="_KCNIQOF7EeuBYMJfL9ax2g" association="_K0268OGAEeuBYMJfL9ax2g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RZUGcOGAEeuBYMJfL9ax2g" name="report and fix problems" memberEnd="_RZUtgOGAEeuBYMJfL9ax2g _RZUtgeGAEeuBYMJfL9ax2g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RZUGceGAEeuBYMJfL9ax2g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RZUGcuGAEeuBYMJfL9ax2g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RZUtgOGAEeuBYMJfL9ax2g" name="student" type="_yejJUOF9EeuBYMJfL9ax2g" association="_RZUGcOGAEeuBYMJfL9ax2g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RZUtgeGAEeuBYMJfL9ax2g" name="mentor group" type="_PI1HAOF_EeuBYMJfL9ax2g" association="_RZUGcOGAEeuBYMJfL9ax2g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_9JNYYOGBEeuBYMJfL9ax2g" name="Introduce subject"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NoEXgOGCEeuBYMJfL9ax2g" name="learn subject" memberEnd="_NoE-kOGCEeuBYMJfL9ax2g _NoE-keGCEeuBYMJfL9ax2g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NoEXgeGCEeuBYMJfL9ax2g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NoEXguGCEeuBYMJfL9ax2g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NoE-kOGCEeuBYMJfL9ax2g" name="introduce subject" type="_9JNYYOGBEeuBYMJfL9ax2g" association="_NoEXgOGCEeuBYMJfL9ax2g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NoE-keGCEeuBYMJfL9ax2g" name="mentor" type="_KCNIQOF7EeuBYMJfL9ax2g" association="_NoEXgOGCEeuBYMJfL9ax2g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JgyjoOGDEeuBYMJfL9ax2g" name="ask for subject" memberEnd="_JgzKseGDEeuBYMJfL9ax2g _JgzKsuGDEeuBYMJfL9ax2g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JgyjoeGDEeuBYMJfL9ax2g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JgzKsOGDEeuBYMJfL9ax2g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JgzKseGDEeuBYMJfL9ax2g" name="introduce subject" type="_9JNYYOGBEeuBYMJfL9ax2g" association="_JgyjoOGDEeuBYMJfL9ax2g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JgzKsuGDEeuBYMJfL9ax2g" name="report and fix problems" type="_RZUGcOGAEeuBYMJfL9ax2g" association="_JgyjoOGDEeuBYMJfL9ax2g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_PjoP0OGDEeuBYMJfL9ax2g" name="Administrative tasks"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JjljgOGEEeuBYMJfL9ax2g" name="assist" memberEnd="_JjmKkuGEEeuBYMJfL9ax2g _JjmKk-GEEeuBYMJfL9ax2g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JjmKkOGEEeuBYMJfL9ax2g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JjmKkeGEEeuBYMJfL9ax2g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JjmKkuGEEeuBYMJfL9ax2g" name="administrative tasks" type="_PjoP0OGDEeuBYMJfL9ax2g" association="_JjljgOGEEeuBYMJfL9ax2g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JjmKk-GEEeuBYMJfL9ax2g" name="learn subject" type="_NoEXgOGCEeuBYMJfL9ax2g" association="_JjljgOGEEeuBYMJfL9ax2g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_0lBXgOGGEeuBYMJfL9ax2g" name="Activity report"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3uKSsOGGEeuBYMJfL9ax2g" name="compose report" memberEnd="_3uKSs-GGEeuBYMJfL9ax2g _3uK5wOGGEeuBYMJfL9ax2g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3uKSseGGEeuBYMJfL9ax2g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3uKSsuGGEeuBYMJfL9ax2g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3uKSs-GGEeuBYMJfL9ax2g" name="activity report" type="_0lBXgOGGEeuBYMJfL9ax2g" association="_3uKSsOGGEeuBYMJfL9ax2g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3uK5wOGGEeuBYMJfL9ax2g" name="mentor" type="_KCNIQOF7EeuBYMJfL9ax2g" association="_3uKSsOGGEeuBYMJfL9ax2g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_800OAOGHEeuBYMJfL9ax2g" name="Enroll"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Cn_tkOGIEeuBYMJfL9ax2g" name="fill in papers, take exams" memberEnd="_CoAUouGIEeuBYMJfL9ax2g _CoAUo-GIEeuBYMJfL9ax2g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CoAUoOGIEeuBYMJfL9ax2g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CoAUoeGIEeuBYMJfL9ax2g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CoAUouGIEeuBYMJfL9ax2g" name="student" type="_yejJUOF9EeuBYMJfL9ax2g" association="_Cn_tkOGIEeuBYMJfL9ax2g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CoAUo-GIEeuBYMJfL9ax2g" name="enrollment" type="_800OAOGHEeuBYMJfL9ax2g" association="_Cn_tkOGIEeuBYMJfL9ax2g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_4Fs-EOGIEeuBYMJfL9ax2g" name="Graduate"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_U87oEOGJEeuBYMJfL9ax2g" memberEnd="_U88PIuGJEeuBYMJfL9ax2g _U88PI-GJEeuBYMJfL9ax2g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U88PIOGJEeuBYMJfL9ax2g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U88PIeGJEeuBYMJfL9ax2g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_U88PIuGJEeuBYMJfL9ax2g" name="student" type="_yejJUOF9EeuBYMJfL9ax2g" association="_U87oEOGJEeuBYMJfL9ax2g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_U88PI-GJEeuBYMJfL9ax2g" name="fill in papers, take exams" type="_Cn_tkOGIEeuBYMJfL9ax2g" association="_U87oEOGJEeuBYMJfL9ax2g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WHCDsOGJEeuBYMJfL9ax2g" name="pass exams successfully" memberEnd="_WHCDs-GJEeuBYMJfL9ax2g _WHCDtOGJEeuBYMJfL9ax2g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WHCDseGJEeuBYMJfL9ax2g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WHCDsuGJEeuBYMJfL9ax2g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WHCDs-GJEeuBYMJfL9ax2g" name="ask for subject" type="_JgyjoOGDEeuBYMJfL9ax2g" association="_WHCDsOGJEeuBYMJfL9ax2g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WHCDtOGJEeuBYMJfL9ax2g" name="graduate" type="_4Fs-EOGIEeuBYMJfL9ax2g" association="_WHCDsOGJEeuBYMJfL9ax2g"/>
+  </packagedElement>
+</uml:Model>
